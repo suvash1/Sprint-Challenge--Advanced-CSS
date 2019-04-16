@@ -1,1 +1,29 @@
 // Mixins Here
+.custom-btn(@color:red, @font-size:20px){
+    width:100px;
+    height:30px;
+    color:@color;
+    background-color:black; 
+    font-size:@font-size;
+
+    .flex-row-dir(row);
+
+    border-radius:5px;   
+    align-content:center;
+    padding-top:3px;
+}
+
+.flex-row-dir(@dir:row){
+    display:flex;
+    flex-direction:row;
+    justify-content:@dir;
+}
+
+.padding-lr(@pad-size:5px){
+    padding-left:@pad-size;
+    padding-right:@pad-size;
+    //border:2px solid green;
+}
+
+
+
